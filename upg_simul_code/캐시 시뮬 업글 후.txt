@@ -1,0 +1,27 @@
+cd C:\Users\ei456\Downloads\cpu-cache-simulator-master\cpu-cache-simulator-master\cpu-cache-simulator
+
+python simulator.py 20 5 10 2 1 LRU WT
+python simulator.py 7 4 5 2 1 LRU WT
+python simulator.py 20 5 10 2 1 LRU WB
+python simulator.py 6 3 4 2 1 LRU WB
+
+mem, L1, L2, Block, mapping, replace, write
+
+### Commands
+
+**read** ADDRESS - read byte from memory
+
+**write** ADDRESS BYTE - write random byte to memory
+
+**randread** AMOUNT - read byte from random location in memory AMOUNT times
+
+**randwrite** AMOUNT - write random byte to random location in memory AMOUNT
+times
+
+**printcache** START LENGTH - print LENGTH lines of cache from START
+
+**printmem** START LENGTH - print LENGTH blocks of memory from START
+
+**stats** - print out hits, misses, and hit/miss ratio
+
+**quit** - quit the simulator
